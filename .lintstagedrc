@@ -1,0 +1,4 @@
+{
+  "*.ts": ["npm run lint -- --fix", "npm run test:hook"],
+  "*.tsx": ["npm run lint -- --fix", "npm run test:hook"]
+}
