@@ -10,7 +10,7 @@
     "test": "jest --silent --maxWorkers=50% --passWithNoTests",
     "test:hook": "npm run test:ci -- --findRelatedTests --bail",
     "test:coverage": "npm run test -- --coverage",
-    "test:verbose": "npm run test -- --verbose",
+    "test:verbose": "jest --maxWorkers=50% --passWithNoTests --verbose",
     "test:watch": "npm run test -- --watchAll",
     "test:ci": "jest --runInBand",
     "postinstall": "husky install"
