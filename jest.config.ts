@@ -7,7 +7,8 @@ export default {
   moduleNameMapper: { '@/(.*)': '<rootDir>/src/$1' },
   preset: 'ts-jest',
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
-  testEnvironment: 'jsdom',
+  testEnvironment: 'jest-environment-jsdom',
   testPathIgnorePatterns: ['/node_modules/', '/cypress/'],
-  testRegex: ['(\\.|/)(spec)\\.ts[x]?$']
+  testRegex: ['(\\.|/)(spec)\\.ts[x]?$'],
+  transform: { '\\.tsx$': 'babel-jest' }
 }
